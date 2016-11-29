@@ -13,7 +13,7 @@ before_install:
 - echo sdkman_auto_answer=true > ~/.sdkman/etc/config
 - source "/home/travis/.sdkman/bin/sdkman-init.sh"
 - sdk install grails 3.2.3 
-- git update-index --chmod=+x gradlew
+- chmod +x gradlew
 
 branches:
   only:
