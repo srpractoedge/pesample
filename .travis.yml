@@ -19,7 +19,6 @@ branches:
   only:
     - master
 
-script: grails -Dgeb.env=firefox test-app functional:cucumber --non-interactive --stacktrace
 script: grails -Dgeb.env=firefox war functional:cucumber --non-interactive --stacktrace
 
  deploy:
