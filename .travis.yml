@@ -19,4 +19,4 @@ branches:
   only:
     - master
 
-script: grails -Dgeb.env=firefox war--non-interactive --stacktrace
+script: grails war --stacktrace
