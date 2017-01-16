@@ -19,7 +19,7 @@ branches:
   only:
     - master
 
-script: grails -Dgeb.env=firefox war functional:cucumber --non-interactive --stacktrace
+script: grails -Dgeb.env=firefox war--non-interactive --stacktrace
 
  deploy:
       - provider: s3
