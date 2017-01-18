@@ -20,7 +20,7 @@ branches:
     - master
 
 script: 
- ./test_war.sh
+ - ./test_war.sh
 
  after_success:
- ./aws-eb-deploy.sh
+ - ./aws-eb-deploy.sh
