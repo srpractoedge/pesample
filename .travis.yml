@@ -20,5 +20,7 @@ branches:
     - master
 
 script: 
-  - grails -Dgeb.env=firefox test-app functional:cucumber --non-interactive --stacktrace
-  - grailsw war
+ - ./test_war.sh
+
+ after_success:
+  - ./aws-eb-deploy.sh
