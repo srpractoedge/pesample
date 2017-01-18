@@ -19,8 +19,12 @@ branches:
   only:
     - master
 
+<<<<<<< HEAD
 script: 
  - ./test_war.sh
 
  after_success:
   - ./aws-eb-deploy.sh
+=======
+script: grails war --stacktrace
+>>>>>>> origin/master
