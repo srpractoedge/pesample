@@ -28,8 +28,6 @@
 # AWS config
 export BEANSTALK_APP=MyApp
 export AWS_REGION=ap-south-1a
-export AWS_ACCESS_KEY_ID=AKIAIZDDZFYMK23MCRDQ
-export AWS_SECRET_ACCESS_KEY=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
 export S3_BUCKET=pesample
 if [ -z "$AWS_ACCESS_KEY_ID" ]; then
     echo "AWS_ACCESS_KEY_ID env variable must be set"
